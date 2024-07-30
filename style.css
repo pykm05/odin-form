@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    background-color: rgb(243, 243, 243);
+}
+
+.description, form, .form-submission {
+    padding-left: 30px;
+}
+
+.sidebar {
+    position: relative;
+    min-width: 400px;
+    height: 100vh;
+    overflow-y: hidden;
+    background-image: url(image/mod-repel.png);
+}
+
+.sidebar {
+    color: white;
+}
+
+.sidebar>img {
+    position: absolute;
+    height: auto;
+    width: 100%;
+    z-index: -1;
+}
+
+.img-body {
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-body div {
+    padding: 20px;
+    font-size: 70px;
+}
+
+.background {
+    position: absolute;
+    background-color: black;
+    height: 170px;
+    width: 100%;
+    opacity: 0.5;
+    top: 150px;
+}
+
+img[src*="odin"] {
+    opacity: 100%;
+    width: 130px;
+}
+
+.main-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* description */
+
+.description {
+    padding: 30px;
+    width: 100%;
+}
+
+.description p {
+    margin-bottom: 20px;
+    width: 550px;
+}
+
+/* form */
+
+form {
+    background-color: white;
+    box-shadow: 5px 5px 5px rgb(197, 197, 197);
+}
+
+form p {
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 25px;
+    display: flex;
+
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 500px;
+    margin-bottom: 10px;
+}
+
+form div {
+    flex: none;
+    padding: 5px 15px;
+}
+
+input {
+    border: solid 1px rgb(189, 186, 186);
+    border-radius: 4px;
+    margin-right: 10px;
+    height: 20px;
+    width: 11rem;
+}
+
+label {
+    color: rgb(64, 64, 64);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+input:focus {
+    outline: solid 2px rgb(93, 93, 219);
+    box-shadow: 3px 5px 5px rgb(210, 210, 210);
+}
+
+/* form-submission */
+
+.form-submission {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.form-submission button {
+    border-radius: 5px;
+    background-color: rgb(2, 82, 2);
+    color: white;
+    width: 150px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+input:invalid {
+    outline: solid 2px red;
+}
+
+input:valid {
+    border: solid 1px rgb(189, 186, 186);
+}
